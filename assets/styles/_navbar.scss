@@ -1,0 +1,45 @@
+.dashboard-wrapper {
+  display: flex;
+}
+
+.dashboard-wrapper,
+.dashboard-wrapper > nav {
+  height: 100vh;
+}
+
+.dashboard-wrapper > nav {
+  background-color: $dark;
+  width: 4.375rem;
+  transition: width var(--transition);
+}
+.dashboard-wrapper > nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dashboard-wrapper > nav > ul > li {
+  color: var(--bs-light);
+}
+
+.dashboard-wrapper > nav > ul > li > a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .5rem;
+  white-space: nowrap;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  min-height: 2.5rem;
+  color: var(--bs-light);
+  text-decoration: none;
+  border-radius: var(--bs-border-radius-lg);
+}
+
+.dashboard-wrapper > main {
+  flex: 1;
+  background-color: var(--bs-gray-300);
+  overflow: auto;
+  padding: 1rem;
+}
